@@ -1,0 +1,61 @@
+site_name: Vulnerabilities Explained Simply
+site_description: A scenario-based security reference covering 100+ vulnerabilities across Web, API, LLM, Android and iOS, Docker, AWS, Desktop, Front-end and Kubernetes.
+site_url: https://nithin136.github.io/vuln-guide/
+repo_url: https://github.com/Nithin136/vuln-guide
+repo_name: Nithin136/vuln-guide
+copyright: Educational use only. Content explains vulnerabilities so they can be found and fixed.
+
+theme:
+  name: material
+  font: false            # system fonts: no Google Fonts requests (privacy + easier CSP later)
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+
+nav:
+  - Home: index.md
+  - "1. Web": part-1-web.md
+  - "2. API": part-2-api.md
+  - "3. LLM": part-3-llm.md
+  - "4. Android and iOS": part-4-android-ios.md
+  - "5. Docker": part-5-docker.md
+  - "6. AWS": part-6-aws.md
+  - "7. Desktop (C/C++)": part-7-desktop.md
+  - "8. Front-end": part-8-frontend.md
+  - "9. Kubernetes": part-9-kubernetes.md
+  - Revision sheet: revision-sheet.md
