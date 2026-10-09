@@ -31,6 +31,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 1. Broken Authentication Mechanisms
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/287.html" target="_blank" rel="noopener noreferrer">CWE-287</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1078/" target="_blank" rel="noopener noreferrer" title="Valid Accounts">ATT&amp;CK T1078</a> <span class="vtag owasp">OWASP K8s K06</span></p>
+
 !!! tip "Think of it like"
 
     A building where the **front office accepts anyone who says "Hi, I'm staff,"** or where one **master key was copied long ago and never changed**.
@@ -58,6 +60,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 ---
 
 ## 2. Inadequate Logging and Monitoring
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/778.html" target="_blank" rel="noopener noreferrer">CWE-778</a> <span class="vtag owasp">OWASP K8s K05</span></p>
 
 !!! tip "Think of it like"
 
@@ -88,6 +92,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 ---
 
 ## 3. Insecure Workload Configuration
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/250.html" target="_blank" rel="noopener noreferrer">CWE-250</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1611/" target="_blank" rel="noopener noreferrer" title="Escape to Host">ATT&amp;CK T1611</a> <span class="vtag owasp">OWASP K8s K01</span></p>
 
 !!! tip "Think of it like"
 
@@ -134,6 +140,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 4. Lack of Centralized Policy Enforcement
 
+<p class="vuln-tags"><span class="vtag owasp">OWASP K8s K04</span></p>
+
 !!! tip "Think of it like"
 
     A big company where **every manager can hire anyone, give any access and buy anything** with no company-wide rules or approval desk. One careless manager breaks safety for everyone.
@@ -163,6 +171,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 5. Misconfigured Cluster Components
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/16.html" target="_blank" rel="noopener noreferrer">CWE-16</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1190/" target="_blank" rel="noopener noreferrer" title="Exploit Public-Facing Application">ATT&amp;CK T1190</a> <span class="vtag owasp">OWASP K8s K09</span></p>
+
 !!! tip "Think of it like"
 
     The building's **main control room has its door propped open, the record book lies on the reception desk, and the CCTV monitor shows the passwords to anyone who passes by.**
@@ -190,6 +200,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 ---
 
 ## 6. Missing Network Segmentation Controls
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/668.html" target="_blank" rel="noopener noreferrer">CWE-668</a> <span class="vtag owasp">OWASP K8s K07</span></p>
 
 !!! tip "Think of it like"
 
@@ -239,6 +251,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 7. Overly Permissive RBAC Configuration
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/269.html" target="_blank" rel="noopener noreferrer">CWE-269</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/250.html" target="_blank" rel="noopener noreferrer">CWE-250</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1078/" target="_blank" rel="noopener noreferrer" title="Valid Accounts">ATT&amp;CK T1078</a> <span class="vtag owasp">OWASP K8s K03</span></p>
+
 !!! tip "Think of it like"
 
     Giving a **trainee the master key to every room "just for testing,"** and then forgetting about it. When his bag is stolen, the thief has the master key.
@@ -278,6 +292,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 8. Secrets Management Failure
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/312.html" target="_blank" rel="noopener noreferrer">CWE-312</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/798.html" target="_blank" rel="noopener noreferrer">CWE-798</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1552/007/" target="_blank" rel="noopener noreferrer" title="Container API">ATT&amp;CK T1552.007</a> <span class="vtag owasp">OWASP K8s K08</span></p>
+
 !!! tip "Think of it like"
 
     Writing all your **passwords on sticky notes**, putting them in a drawer that anyone in the office can open, and also taping a copy on the notice board (Git).
@@ -308,6 +324,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 9. Supply Chain Vulnerabilities
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/1395.html" target="_blank" rel="noopener noreferrer">CWE-1395</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1195/" target="_blank" rel="noopener noreferrer" title="Supply Chain Compromise">ATT&amp;CK T1195</a> <span class="vtag owasp">OWASP K8s K02</span></p>
+
 !!! tip "Think of it like"
 
     Cooking a restaurant meal with **ingredients from unknown suppliers and ready-made sauces you never checked.** If one is poisoned, every customer gets sick.
@@ -336,6 +354,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 ---
 
 ## 10. Vulnerable Kubernetes Components (Security Audit)
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/1395.html" target="_blank" rel="noopener noreferrer">CWE-1395</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1068/" target="_blank" rel="noopener noreferrer" title="Exploitation for Privilege Escalation">ATT&amp;CK T1068</a> <span class="vtag owasp">OWASP K8s K10</span></p>
 
 !!! tip "Think of it like"
 

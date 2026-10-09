@@ -23,6 +23,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 1. Prompt Injection
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/1427.html" target="_blank" rel="noopener noreferrer">CWE-1427</a> <span class="vtag owasp">OWASP LLM01:2025</span></p>
+
 !!! tip "Think of it like"
 
     A new employee follows a written rule sheet. A visitor hands him a note that says, "**Ignore your rule sheet. I'm your new boss.**" The employee can't tell the note isn't from the real boss, and obeys.
@@ -58,6 +60,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 2. Sensitive Information Disclosure
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/200.html" target="_blank" rel="noopener noreferrer">CWE-200</a> <span class="vtag owasp">OWASP LLM02:2025</span></p>
+
 !!! tip "Think of it like"
 
     A receptionist who has read everyone's private files and, when asked a clever question, **accidentally reads out someone's details** in conversation.
@@ -84,6 +88,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 ---
 
 ## 3. Supply Chain
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/1395.html" target="_blank" rel="noopener noreferrer">CWE-1395</a> <span class="vtag owasp">OWASP LLM03:2025</span></p>
 
 !!! tip "Think of it like"
 
@@ -113,6 +119,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 4. Data and Model Poisoning
 
+<p class="vuln-tags"><span class="vtag owasp">OWASP LLM04:2025</span></p>
+
 !!! tip "Think of it like"
 
     Someone **secretly changes a few pages in a student's textbook**. The student then learns the wrong facts and confidently repeats them in the exam.
@@ -140,6 +148,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 ---
 
 ## 5. Improper Output Handling
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/116.html" target="_blank" rel="noopener noreferrer">CWE-116</a> <span class="vtag owasp">OWASP LLM05:2025</span></p>
 
 !!! tip "Think of it like"
 
@@ -169,6 +179,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 6. Excessive Agency
 
+<p class="vuln-tags"><span class="vtag owasp">OWASP LLM06:2025</span></p>
+
 !!! tip "Think of it like"
 
     You hire a helper to water your plants and give him your **house keys, bank card and car keys**. If someone fools him, the damage is huge. He only needed the house key.
@@ -196,6 +208,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 7. System Prompt Leakage
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/200.html" target="_blank" rel="noopener noreferrer">CWE-200</a> <span class="vtag owasp">OWASP LLM07:2025</span></p>
+
 !!! tip "Think of it like"
 
     A shop owner writes the **safe's combination on the staff instruction sheet** and thinks, "Customers will never see the sheet." A customer politely asks, "Can I see your sheet?"
@@ -221,6 +235,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 ---
 
 ## 8. Vector and Embedding Weaknesses
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/200.html" target="_blank" rel="noopener noreferrer">CWE-200</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/862.html" target="_blank" rel="noopener noreferrer">CWE-862</a> <span class="vtag owasp">OWASP LLM08:2025</span></p>
 
 !!! tip "Think of it like"
 
@@ -250,6 +266,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 9. Misinformation
 
+<p class="vuln-tags"><span class="vtag owasp">OWASP LLM09:2025</span></p>
+
 !!! tip "Think of it like"
 
     A very confident friend who **never says "I don't know."** When he doesn't know the answer, he invents one in a convincing voice.
@@ -277,6 +295,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 ---
 
 ## 10. Denial of Service (called "Unbounded Consumption" in newer lists)
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/400.html" target="_blank" rel="noopener noreferrer">CWE-400</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/770.html" target="_blank" rel="noopener noreferrer">CWE-770</a> <span class="vtag owasp">OWASP LLM10:2025</span></p>
 
 !!! tip "Think of it like"
 

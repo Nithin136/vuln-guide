@@ -25,6 +25,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 1. Container Resource Limitation
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/770.html" target="_blank" rel="noopener noreferrer">CWE-770</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1499/" target="_blank" rel="noopener noreferrer" title="Endpoint Denial of Service">ATT&amp;CK T1499</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1496/" target="_blank" rel="noopener noreferrer" title="Resource Hijacking">ATT&amp;CK T1496</a></p>
+
 !!! tip "Think of it like"
 
     A shared flat where **one roommate runs the AC, heater and geyser all day** and the electricity trips for everyone.
@@ -66,6 +68,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 2. Exposed Docker Socket
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/250.html" target="_blank" rel="noopener noreferrer">CWE-250</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/269.html" target="_blank" rel="noopener noreferrer">CWE-269</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1611/" target="_blank" rel="noopener noreferrer" title="Escape to Host">ATT&amp;CK T1611</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1610/" target="_blank" rel="noopener noreferrer" title="Deploy Container">ATT&amp;CK T1610</a></p>
+
 !!! tip "Think of it like"
 
     Giving a visitor **the direct phone line to the building manager**, who can unlock any door and give out master keys. Whatever the visitor says, the manager does.
@@ -97,6 +101,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 3. Host Update
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/1395.html" target="_blank" rel="noopener noreferrer">CWE-1395</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1611/" target="_blank" rel="noopener noreferrer" title="Escape to Host">ATT&amp;CK T1611</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1068/" target="_blank" rel="noopener noreferrer" title="Exploitation for Privilege Escalation">ATT&amp;CK T1068</a></p>
+
 !!! tip "Think of it like"
 
     Your flats are separate, but they all share **one old main gate** with a known broken lock. Fix every flat's door as much as you like, but a thief just opens the main gate.
@@ -127,6 +133,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 ---
 
 ## 4. Improper Write Permissions for Volumes and Host Filesystem
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/732.html" target="_blank" rel="noopener noreferrer">CWE-732</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1611/" target="_blank" rel="noopener noreferrer" title="Escape to Host">ATT&amp;CK T1611</a></p>
 
 !!! tip "Think of it like"
 
@@ -166,6 +174,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 5. Insecure Container Registries
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/319.html" target="_blank" rel="noopener noreferrer">CWE-319</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1195/" target="_blank" rel="noopener noreferrer" title="Supply Chain Compromise">ATT&amp;CK T1195</a></p>
+
 !!! tip "Think of it like"
 
     Collecting your parcels from a **shop that has no ID check and no seal**, so anyone can swap your parcel with a fake one on the way.
@@ -196,6 +206,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 ---
 
 ## 6. Minimal Base Image
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/1395.html" target="_blank" rel="noopener noreferrer">CWE-1395</a></p>
 
 !!! tip "Think of it like"
 
@@ -234,6 +246,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 ---
 
 ## 7. Privileged Containers
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/250.html" target="_blank" rel="noopener noreferrer">CWE-250</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/269.html" target="_blank" rel="noopener noreferrer">CWE-269</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1611/" target="_blank" rel="noopener noreferrer" title="Escape to Host">ATT&amp;CK T1611</a></p>
 
 !!! tip "Think of it like"
 
@@ -275,6 +289,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 8. Sensitive Data Leak via Docker Images
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/798.html" target="_blank" rel="noopener noreferrer">CWE-798</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/312.html" target="_blank" rel="noopener noreferrer">CWE-312</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1552/001/" target="_blank" rel="noopener noreferrer" title="Credentials In Files">ATT&amp;CK T1552.001</a></p>
+
 !!! tip "Think of it like"
 
     Mailing a **sealed box that you forgot to empty first**. It still contains your bank passbook, and anyone who receives it can open it.
@@ -314,6 +330,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 ---
 
 ## 9. Unsegregated Container Network
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/668.html" target="_blank" rel="noopener noreferrer">CWE-668</a></p>
 
 !!! tip "Think of it like"
 
@@ -357,6 +375,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 ---
 
 ## 10. Unverified Container Images
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/494.html" target="_blank" rel="noopener noreferrer">CWE-494</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/829.html" target="_blank" rel="noopener noreferrer">CWE-829</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1204/003/" target="_blank" rel="noopener noreferrer" title="Malicious Image">ATT&amp;CK T1204.003</a></p>
 
 !!! tip "Think of it like"
 

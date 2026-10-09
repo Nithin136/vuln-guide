@@ -29,6 +29,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 1. Dangerous Dependencies
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/1395.html" target="_blank" rel="noopener noreferrer">CWE-1395</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1195/001/" target="_blank" rel="noopener noreferrer" title="Compromise Software Dependencies and Development Tools">ATT&amp;CK T1195.001</a></p>
+
 !!! tip "Think of it like"
 
     Building your office with **parts bought from many suppliers**. If one supplier's part is faulty or sabotaged, your whole office has a weak spot, even if your own work is perfect.
@@ -56,6 +58,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 ---
 
 ## 2. Excessive Logging
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/532.html" target="_blank" rel="noopener noreferrer">CWE-532</a></p>
 
 !!! tip "Think of it like"
 
@@ -87,6 +91,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 3. Lambda Command Injection
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/78.html" target="_blank" rel="noopener noreferrer">CWE-78</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1059/" target="_blank" rel="noopener noreferrer" title="Command and Scripting Interpreter">ATT&amp;CK T1059</a></p>
+
 !!! tip "Think of it like"
 
     A helper takes your note and **follows every instruction in it**, including "also open the safe," because he doesn't see where your request ends and the extra order begins.
@@ -113,6 +119,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 ---
 
 ## 4. Lambda XXE Injection
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/611.html" target="_blank" rel="noopener noreferrer">CWE-611</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1190/" target="_blank" rel="noopener noreferrer" title="Exploit Public-Facing Application">ATT&amp;CK T1190</a></p>
 
 !!! tip "Think of it like"
 
@@ -142,6 +150,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 5. Misconfigured AWS Cognito Attributes
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/915.html" target="_blank" rel="noopener noreferrer">CWE-915</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/269.html" target="_blank" rel="noopener noreferrer">CWE-269</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1098/" target="_blank" rel="noopener noreferrer" title="Account Manipulation">ATT&amp;CK T1098</a></p>
+
 !!! tip "Think of it like"
 
     A hotel's reception form where guests can **fill in their own "VIP level" field** and the hotel believes it.
@@ -169,6 +179,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 6. Misconfigured AWS Cognito Profile Allows Self-Registration
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/284.html" target="_blank" rel="noopener noreferrer">CWE-284</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1136/003/" target="_blank" rel="noopener noreferrer" title="Create Account: Cloud Account">ATT&amp;CK T1136.003</a></p>
+
 !!! tip "Think of it like"
 
     An **"employees only" office whose front door has a "Sign up here for a staff card" desk open to anyone** walking in from the street.
@@ -195,6 +207,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 ---
 
 ## 7. Misconfigured Reverse Proxy
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/16.html" target="_blank" rel="noopener noreferrer">CWE-16</a></p>
 
 !!! tip "Think of it like"
 
@@ -224,6 +238,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 8. S3 Bucket: Authenticated Users Have "WRITE" Access
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/732.html" target="_blank" rel="noopener noreferrer">CWE-732</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/284.html" target="_blank" rel="noopener noreferrer">CWE-284</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1565/001/" target="_blank" rel="noopener noreferrer" title="Stored Data Manipulation">ATT&amp;CK T1565.001</a></p>
+
 !!! tip "Think of it like"
 
     A company noticeboard that says "**Anyone holding any bank account in the country may write on it or tear down notices.**" It sounds restricted, but millions of people qualify.
@@ -252,6 +268,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 9. S3 Bucket: Public "READ" Access
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/732.html" target="_blank" rel="noopener noreferrer">CWE-732</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/200.html" target="_blank" rel="noopener noreferrer">CWE-200</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1530/" target="_blank" rel="noopener noreferrer" title="Data from Cloud Storage">ATT&amp;CK T1530</a></p>
+
 !!! tip "Think of it like"
 
     Storing your customer invoices in a **filing cabinet on the pavement with a sign "Please take a look."**
@@ -278,6 +296,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 ---
 
 ## 10. S3 Directory Traversal
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/22.html" target="_blank" rel="noopener noreferrer">CWE-22</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1530/" target="_blank" rel="noopener noreferrer" title="Data from Cloud Storage">ATT&amp;CK T1530</a></p>
 
 !!! tip "Think of it like"
 
@@ -307,6 +327,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 11. Server-Side Request Forgery (SSRF)
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/918.html" target="_blank" rel="noopener noreferrer">CWE-918</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1552/005/" target="_blank" rel="noopener noreferrer" title="Cloud Instance Metadata API">ATT&amp;CK T1552.005</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1190/" target="_blank" rel="noopener noreferrer" title="Exploit Public-Facing Application">ATT&amp;CK T1190</a></p>
+
 !!! tip "Think of it like"
 
     You ask a trusted office assistant, "Please fetch the document at this address for me," and give the address of the **boss's locked cabinet**. You can't open it, but **he can**, and he hands it over.
@@ -335,6 +357,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 12. Subdomain Takeover
 
+<p class="vuln-tags"><a class="vtag atk" href="https://attack.mitre.org/techniques/T1584/001/" target="_blank" rel="noopener noreferrer" title="Compromise Infrastructure: Domains">ATT&amp;CK T1584.001</a></p>
+
 !!! tip "Think of it like"
 
     You close a shop but **leave the signboard and address listing on the street directory**. A stranger rents the empty shop, and customers who follow the directory walk into **his** shop thinking it's yours.
@@ -361,6 +385,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 ---
 
 ## 13. Weak S3 POST Upload Policy
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/434.html" target="_blank" rel="noopener noreferrer">CWE-434</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/770.html" target="_blank" rel="noopener noreferrer">CWE-770</a></p>
 
 !!! tip "Think of it like"
 

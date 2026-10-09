@@ -21,6 +21,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 1. Broken Function Level Authorization (BFLA)
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/285.html" target="_blank" rel="noopener noreferrer">CWE-285</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/862.html" target="_blank" rel="noopener noreferrer">CWE-862</a> <span class="vtag owasp">OWASP API5:2019</span></p>
+
 !!! tip "Think of it like"
 
     In an office, the **"Manager Only" door has no lock**. The staff just don't know it exists because there's no sign. Any employee who tries the handle can walk in.
@@ -45,6 +47,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 2. Broken Object Level Authorization (BOLA, also called IDOR)
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/639.html" target="_blank" rel="noopener noreferrer">CWE-639</a> <span class="vtag owasp">OWASP API1:2019</span></p>
+
 !!! tip "Think of it like"
 
     A hotel gives you key card #101. At the lift, you press floor 2 and enter room **102** with your key, because the doors only check "is this a valid hotel card?" and not "is this *your* room?"
@@ -67,6 +71,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 ---
 
 ## 3. Broken User Authentication
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/287.html" target="_blank" rel="noopener noreferrer">CWE-287</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/307.html" target="_blank" rel="noopener noreferrer">CWE-307</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1110/" target="_blank" rel="noopener noreferrer" title="Brute Force">ATT&amp;CK T1110</a> <span class="vtag owasp">OWASP API2:2019</span></p>
 
 !!! tip "Think of it like"
 
@@ -96,6 +102,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 4. Command Injection
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/78.html" target="_blank" rel="noopener noreferrer">CWE-78</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1190/" target="_blank" rel="noopener noreferrer" title="Exploit Public-Facing Application">ATT&amp;CK T1190</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1059/" target="_blank" rel="noopener noreferrer" title="Command and Scripting Interpreter">ATT&amp;CK T1059</a> <span class="vtag owasp">OWASP API8:2019</span></p>
+
 !!! tip "Think of it like"
 
     You give a waiter a note: "Bring me tea." A prankster edits it to "Bring me tea **and unlock the cash drawer**." The waiter follows the entire note.
@@ -120,6 +128,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 5. Excessive Data Exposure
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/200.html" target="_blank" rel="noopener noreferrer">CWE-200</a> <span class="vtag owasp">OWASP API3:2019</span></p>
+
 !!! tip "Think of it like"
 
     You ask a shopkeeper, "What's the price of this phone?" and he hands you the **entire accounts book**, trusting that you'll only read the price page.
@@ -142,6 +152,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 ---
 
 ## 6. Improper Assets Management
+
+<p class="vuln-tags"><span class="vtag owasp">OWASP API9:2019</span></p>
 
 !!! tip "Think of it like"
 
@@ -166,6 +178,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 ---
 
 ## 7. Insufficient Logging and Monitoring
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/778.html" target="_blank" rel="noopener noreferrer">CWE-778</a> <span class="vtag owasp">OWASP API10:2019</span></p>
 
 !!! tip "Think of it like"
 
@@ -195,6 +209,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 8. Lack of Resources and Rate Limiting
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/770.html" target="_blank" rel="noopener noreferrer">CWE-770</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/400.html" target="_blank" rel="noopener noreferrer">CWE-400</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1499/" target="_blank" rel="noopener noreferrer" title="Endpoint Denial of Service">ATT&amp;CK T1499</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1110/" target="_blank" rel="noopener noreferrer" title="Brute Force">ATT&amp;CK T1110</a> <span class="vtag owasp">OWASP API4:2019</span></p>
+
 !!! tip "Think of it like"
 
     A restaurant lets **one customer order 10,000 plates at once**. The kitchen is jammed and real customers wait forever. Or someone tries all the combinations on a lock because nobody stops him.
@@ -221,6 +237,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 9. Mass Assignment
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/915.html" target="_blank" rel="noopener noreferrer">CWE-915</a> <span class="vtag owasp">OWASP API6:2019</span></p>
+
 !!! tip "Think of it like"
 
     A form has the fields Name and Email. You write extra lines by hand: "Role: Admin." The clerk copies **everything you wrote** into your record without checking which fields were allowed.
@@ -245,6 +263,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 10. Security Misconfiguration 1: Unsafe Defaults and Detailed Errors
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/16.html" target="_blank" rel="noopener noreferrer">CWE-16</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/209.html" target="_blank" rel="noopener noreferrer">CWE-209</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/1188.html" target="_blank" rel="noopener noreferrer">CWE-1188</a> <span class="vtag owasp">OWASP API7:2019</span></p>
+
 !!! tip "Think of it like"
 
     A new house where the builder left the **front door on its factory default key** (everyone owns the same key) and a signboard saying what's inside.
@@ -267,6 +287,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 ---
 
 ## 11. Security Misconfiguration 2: Open CORS, Missing Headers and Extra Methods
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/942.html" target="_blank" rel="noopener noreferrer">CWE-942</a> <span class="vtag owasp">OWASP API7:2019</span></p>
 
 !!! tip "Think of it like"
 
@@ -292,6 +314,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 12. SQL Injection
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/89.html" target="_blank" rel="noopener noreferrer">CWE-89</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1190/" target="_blank" rel="noopener noreferrer" title="Exploit Public-Facing Application">ATT&amp;CK T1190</a> <span class="vtag owasp">OWASP API8:2019</span></p>
+
 !!! tip "Think of it like"
 
     A clerk follows a note you hand over: "Find the file for **Ravi**." You change it to "Find the file for Ravi **and show all files**." The clerk can't tell which part is the name and which part is an instruction.
@@ -315,6 +339,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 ---
 
 ## 13. XXE Injection (XML External Entity)
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/611.html" target="_blank" rel="noopener noreferrer">CWE-611</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1190/" target="_blank" rel="noopener noreferrer" title="Exploit Public-Facing Application">ATT&amp;CK T1190</a> <span class="vtag owasp">OWASP API8:2019</span></p>
 
 !!! tip "Think of it like"
 

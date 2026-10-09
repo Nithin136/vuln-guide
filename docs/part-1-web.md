@@ -22,6 +22,8 @@ Every item has: **Think of it like** (real-life picture) → **Scenario** (step 
 
 ## 1. Clickjacking
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/1021.html" target="_blank" rel="noopener noreferrer">CWE-1021</a></p>
+
 !!! tip "Think of it like"
 
     Someone puts a transparent sticker over an ATM's "Check balance" button, but underneath it is "Send money". You press what you *see*, but you actually press what is *hidden*.
@@ -45,6 +47,8 @@ Every item has: **Think of it like** (real-life picture) → **Scenario** (step 
 ---
 
 ## 2. Command Injection
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/78.html" target="_blank" rel="noopener noreferrer">CWE-78</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1190/" target="_blank" rel="noopener noreferrer" title="Exploit Public-Facing Application">ATT&amp;CK T1190</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1059/" target="_blank" rel="noopener noreferrer" title="Command and Scripting Interpreter">ATT&amp;CK T1059</a> <span class="vtag owasp">OWASP A03:2021</span></p>
 
 !!! tip "Think of it like"
 
@@ -70,6 +74,8 @@ Every item has: **Think of it like** (real-life picture) → **Scenario** (step 
 
 ## 3. Components with Vulnerabilities
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/1395.html" target="_blank" rel="noopener noreferrer">CWE-1395</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1190/" target="_blank" rel="noopener noreferrer" title="Exploit Public-Facing Application">ATT&amp;CK T1190</a> <span class="vtag owasp">OWASP A06:2021</span></p>
+
 !!! tip "Think of it like"
 
     Your house has a great lock, but the **window latch you bought is a known faulty model**. Thieves know it and just open it.
@@ -93,6 +99,8 @@ Every item has: **Think of it like** (real-life picture) → **Scenario** (step 
 ---
 
 ## 4. Cross-Site Request Forgery (CSRF)
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/352.html" target="_blank" rel="noopener noreferrer">CWE-352</a> <span class="vtag owasp">OWASP A01:2021</span></p>
 
 !!! tip "Think of it like"
 
@@ -118,6 +126,8 @@ Every item has: **Think of it like** (real-life picture) → **Scenario** (step 
 
 ## 5. Directory Traversal
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/22.html" target="_blank" rel="noopener noreferrer">CWE-22</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1190/" target="_blank" rel="noopener noreferrer" title="Exploit Public-Facing Application">ATT&amp;CK T1190</a> <span class="vtag owasp">OWASP A01:2021</span></p>
+
 !!! tip "Think of it like"
 
     A library lets you take books only from the "Public" shelf. You say, "Go **up one floor** and then pick from the Staff Room." Because nobody blocked "go up", you reach private shelves.
@@ -140,6 +150,8 @@ Every item has: **Think of it like** (real-life picture) → **Scenario** (step 
 ---
 
 ## 6. DOM XSS (Cross-Site Scripting, browser side)
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/79.html" target="_blank" rel="noopener noreferrer">CWE-79</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1059/007/" target="_blank" rel="noopener noreferrer" title="JavaScript">ATT&amp;CK T1059.007</a> <span class="vtag owasp">OWASP A03:2021</span></p>
 
 !!! tip "Think of it like"
 
@@ -165,6 +177,8 @@ Every item has: **Think of it like** (real-life picture) → **Scenario** (step 
 
 ## 7. Forced Browsing
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/425.html" target="_blank" rel="noopener noreferrer">CWE-425</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/862.html" target="_blank" rel="noopener noreferrer">CWE-862</a> <span class="vtag owasp">OWASP A01:2021</span></p>
+
 !!! tip "Think of it like"
 
     A shop has a door marked "Staff only" with **no lock**. It's "hidden" just because there's no sign pointing to it. Anyone who tries the handle walks in.
@@ -186,6 +200,8 @@ Every item has: **Think of it like** (real-life picture) → **Scenario** (step 
 ---
 
 ## 8. Header Injection
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/113.html" target="_blank" rel="noopener noreferrer">CWE-113</a> <span class="vtag owasp">OWASP A03:2021</span></p>
 
 !!! tip "Think of it like"
 
@@ -210,6 +226,8 @@ Every item has: **Think of it like** (real-life picture) → **Scenario** (step 
 
 ## 9. Horizontal Privilege Escalation
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/639.html" target="_blank" rel="noopener noreferrer">CWE-639</a> <span class="vtag owasp">OWASP A01:2021</span></p>
+
 !!! tip "Think of it like"
 
     In a hotel, every guest has a key for their own room. A guest finds that the key **also opens the room next door**. Same level (guest), someone else's space.
@@ -231,6 +249,8 @@ Every item has: **Think of it like** (real-life picture) → **Scenario** (step 
 ---
 
 ## 10. Insecure URL Redirect
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/601.html" target="_blank" rel="noopener noreferrer">CWE-601</a> <span class="vtag owasp">OWASP A01:2021</span></p>
 
 !!! tip "Think of it like"
 
@@ -255,6 +275,8 @@ Every item has: **Think of it like** (real-life picture) → **Scenario** (step 
 
 ## 11. Leftover Debug Code
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/489.html" target="_blank" rel="noopener noreferrer">CWE-489</a> <span class="vtag owasp">OWASP A05:2021</span></p>
+
 !!! tip "Think of it like"
 
     A builder leaves the **spare key and construction plans** hanging on the front door after finishing the house.
@@ -277,6 +299,8 @@ Every item has: **Think of it like** (real-life picture) → **Scenario** (step 
 ---
 
 ## 12. Log4j (CVE-2021-44228, "Log4Shell")
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/917.html" target="_blank" rel="noopener noreferrer">CWE-917</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/502.html" target="_blank" rel="noopener noreferrer">CWE-502</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1190/" target="_blank" rel="noopener noreferrer" title="Exploit Public-Facing Application">ATT&amp;CK T1190</a> <span class="vtag owasp">OWASP A06:2021</span></p>
 
 !!! tip "Think of it like"
 
@@ -302,6 +326,8 @@ Every item has: **Think of it like** (real-life picture) → **Scenario** (step 
 
 ## 13. PII Data in URL
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/598.html" target="_blank" rel="noopener noreferrer">CWE-598</a></p>
+
 !!! tip "Think of it like"
 
     Writing your phone number and ID number on the **outside of an envelope** instead of inside it. Everyone who handles it can read it.
@@ -324,6 +350,8 @@ Every item has: **Think of it like** (real-life picture) → **Scenario** (step 
 ---
 
 ## 14. Reflected XSS
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/79.html" target="_blank" rel="noopener noreferrer">CWE-79</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1059/007/" target="_blank" rel="noopener noreferrer" title="JavaScript">ATT&amp;CK T1059.007</a> <span class="vtag owasp">OWASP A03:2021</span></p>
 
 !!! tip "Think of it like"
 
@@ -349,6 +377,8 @@ Every item has: **Think of it like** (real-life picture) → **Scenario** (step 
 
 ## 15. Ruby rest-client 1.6.13 Backdoor
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/506.html" target="_blank" rel="noopener noreferrer">CWE-506</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1195/002/" target="_blank" rel="noopener noreferrer" title="Compromise Software Supply Chain">ATT&amp;CK T1195.002</a> <span class="vtag owasp">OWASP A08:2021</span></p>
+
 !!! tip "Think of it like"
 
     You buy a sealed medicine bottle from a trusted brand, but someone **swapped one batch** with a tampered one. It looks identical, but it's harmful.
@@ -372,6 +402,8 @@ Every item has: **Think of it like** (real-life picture) → **Scenario** (step 
 
 ## 16. Sensitive Server-Side Request Forgery (SSRF)
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/918.html" target="_blank" rel="noopener noreferrer">CWE-918</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1190/" target="_blank" rel="noopener noreferrer" title="Exploit Public-Facing Application">ATT&amp;CK T1190</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1552/005/" target="_blank" rel="noopener noreferrer" title="Cloud Instance Metadata API">ATT&amp;CK T1552.005</a> <span class="vtag owasp">OWASP A10:2021</span></p>
+
 !!! tip "Think of it like"
 
     You ask a trusted office assistant: "Please go and fetch this document from this address." You give the address of the **boss's private locked cabinet**, which only staff can enter. The assistant has access, so he gets it for you.
@@ -394,6 +426,8 @@ Every item has: **Think of it like** (real-life picture) → **Scenario** (step 
 ---
 
 ## 17. Session Fixation
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/384.html" target="_blank" rel="noopener noreferrer">CWE-384</a> <span class="vtag owasp">OWASP A07:2021</span></p>
 
 !!! tip "Think of it like"
 
@@ -419,6 +453,8 @@ Every item has: **Think of it like** (real-life picture) → **Scenario** (step 
 
 ## 18. SQL Injection
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/89.html" target="_blank" rel="noopener noreferrer">CWE-89</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1190/" target="_blank" rel="noopener noreferrer" title="Exploit Public-Facing Application">ATT&amp;CK T1190</a> <span class="vtag owasp">OWASP A03:2021</span></p>
+
 !!! tip "Think of it like"
 
     A bank clerk follows a note you hand over: "Give money to **Ravi**." You change it to "Give money to Ravi **and open the vault**." The clerk can't tell what's data and what's a command.
@@ -443,6 +479,8 @@ Every item has: **Think of it like** (real-life picture) → **Scenario** (step 
 
 ## 19. Stored XSS
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/79.html" target="_blank" rel="noopener noreferrer">CWE-79</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1059/007/" target="_blank" rel="noopener noreferrer" title="JavaScript">ATT&amp;CK T1059.007</a> <span class="vtag owasp">OWASP A03:2021</span></p>
+
 !!! tip "Think of it like"
 
     A prankster writes a trap on the **wall of a public board**. It stays there, and *everyone* who looks at the wall gets caught, not just one person.
@@ -465,6 +503,8 @@ Every item has: **Think of it like** (real-life picture) → **Scenario** (step 
 ---
 
 ## 20. TikTok XSS Vulnerability
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/79.html" target="_blank" rel="noopener noreferrer">CWE-79</a> <span class="vtag owasp">OWASP A03:2021</span></p>
 
 !!! tip "Think of it like"
 
@@ -491,6 +531,8 @@ Every item has: **Think of it like** (real-life picture) → **Scenario** (step 
 
 ## 21. Token Exposure in URL
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/598.html" target="_blank" rel="noopener noreferrer">CWE-598</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1528/" target="_blank" rel="noopener noreferrer" title="Steal Application Access Token">ATT&amp;CK T1528</a></p>
+
 !!! tip "Think of it like"
 
     Writing your **house key's code on a postcard**. Everyone who touches the postcard can copy it.
@@ -513,6 +555,8 @@ Every item has: **Think of it like** (real-life picture) → **Scenario** (step 
 ---
 
 ## 22. User Enumeration
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/204.html" target="_blank" rel="noopener noreferrer">CWE-204</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1087/" target="_blank" rel="noopener noreferrer" title="Account Discovery">ATT&amp;CK T1087</a> <span class="vtag owasp">OWASP A07:2021</span></p>
 
 !!! tip "Think of it like"
 
@@ -537,6 +581,8 @@ Every item has: **Think of it like** (real-life picture) → **Scenario** (step 
 
 ## 23. Vertical Privilege Escalation
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/269.html" target="_blank" rel="noopener noreferrer">CWE-269</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/863.html" target="_blank" rel="noopener noreferrer">CWE-863</a> <span class="vtag owasp">OWASP A01:2021</span></p>
+
 !!! tip "Think of it like"
 
     A visitor with a "Guest" badge changes the badge to "Manager" with a pen, and the guard just trusts the badge. Going **up** in rank.
@@ -559,6 +605,8 @@ Every item has: **Think of it like** (real-life picture) → **Scenario** (step 
 ---
 
 ## 24. Weak Randomness
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/330.html" target="_blank" rel="noopener noreferrer">CWE-330</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/338.html" target="_blank" rel="noopener noreferrer">CWE-338</a> <span class="vtag owasp">OWASP A02:2021</span></p>
 
 !!! tip "Think of it like"
 
@@ -583,6 +631,8 @@ Every item has: **Think of it like** (real-life picture) → **Scenario** (step 
 ---
 
 ## 25. XML Injection
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/91.html" target="_blank" rel="noopener noreferrer">CWE-91</a> <span class="vtag owasp">OWASP A03:2021</span></p>
 
 !!! tip "Think of it like"
 

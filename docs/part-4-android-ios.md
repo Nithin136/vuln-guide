@@ -32,6 +32,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 1. Improper Credential Usage
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/798.html" target="_blank" rel="noopener noreferrer">CWE-798</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1552/001/" target="_blank" rel="noopener noreferrer" title="Credentials In Files">ATT&amp;CK T1552.001</a> <span class="vtag owasp">OWASP Mobile M1:2024</span></p>
+
 !!! tip "Think of it like"
 
     A shopkeeper writes the **cash-box password on a sticker stuck on the box itself**. Anyone who picks the box up reads it.
@@ -58,6 +60,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 ---
 
 ## 2. Inadequate Supply Chain Security
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/1395.html" target="_blank" rel="noopener noreferrer">CWE-1395</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/829.html" target="_blank" rel="noopener noreferrer">CWE-829</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1195/001/" target="_blank" rel="noopener noreferrer" title="Compromise Software Dependencies and Development Tools">ATT&amp;CK T1195.001</a> <span class="vtag owasp">OWASP Mobile M2:2024</span></p>
 
 !!! tip "Think of it like"
 
@@ -87,6 +91,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 3. Insecure Authentication/Authorization
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/287.html" target="_blank" rel="noopener noreferrer">CWE-287</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/862.html" target="_blank" rel="noopener noreferrer">CWE-862</a> <span class="vtag owasp">OWASP Mobile M3:2024</span></p>
+
 !!! tip "Think of it like"
 
     A club puts a "VIP only" sign on the door, but **the staff inside never check anyone's pass**. Only the sign says VIP.
@@ -113,6 +119,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 ---
 
 ## 4. Insufficient Input/Output Validation
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/20.html" target="_blank" rel="noopener noreferrer">CWE-20</a> <span class="vtag owasp">OWASP Mobile M4:2024</span></p>
 
 !!! tip "Think of it like"
 
@@ -142,6 +150,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 5. Insecure Communication
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/319.html" target="_blank" rel="noopener noreferrer">CWE-319</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/295.html" target="_blank" rel="noopener noreferrer">CWE-295</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1557/" target="_blank" rel="noopener noreferrer" title="Adversary-in-the-Middle">ATT&amp;CK T1557</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1040/" target="_blank" rel="noopener noreferrer" title="Network Sniffing">ATT&amp;CK T1040</a> <span class="vtag owasp">OWASP Mobile M5:2024</span></p>
+
 !!! tip "Think of it like"
 
     Sending your bank details on a **postcard**. Every postman on the way can read it.
@@ -168,6 +178,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 ---
 
 ## 6. Inadequate Privacy Controls
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/359.html" target="_blank" rel="noopener noreferrer">CWE-359</a> <span class="vtag owasp">OWASP Mobile M6:2024</span></p>
 
 !!! tip "Think of it like"
 
@@ -196,6 +208,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 7. Insufficient Binary Protections
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/693.html" target="_blank" rel="noopener noreferrer">CWE-693</a> <span class="vtag owasp">OWASP Mobile M7:2024</span></p>
+
 !!! tip "Think of it like"
 
     A paid recipe book with **no lock and no watermark**. Anyone can copy it, change the price and resell it.
@@ -222,6 +236,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 ---
 
 ## 8. Security Misconfiguration
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/489.html" target="_blank" rel="noopener noreferrer">CWE-489</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/926.html" target="_blank" rel="noopener noreferrer">CWE-926</a> <span class="vtag owasp">OWASP Mobile M8:2024</span></p>
 
 !!! tip "Think of it like"
 
@@ -250,6 +266,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 9. Insecure Data Storage
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/312.html" target="_blank" rel="noopener noreferrer">CWE-312</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/922.html" target="_blank" rel="noopener noreferrer">CWE-922</a> <span class="vtag owasp">OWASP Mobile M9:2024</span></p>
+
 !!! tip "Think of it like"
 
     Keeping your ATM PIN in a **notebook on the open desk** instead of in a locked drawer.
@@ -276,6 +294,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 ---
 
 ## 10. Insufficient Cryptography
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/327.html" target="_blank" rel="noopener noreferrer">CWE-327</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/321.html" target="_blank" rel="noopener noreferrer">CWE-321</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/916.html" target="_blank" rel="noopener noreferrer">CWE-916</a> <span class="vtag owasp">OWASP Mobile M10:2024</span></p>
 
 !!! tip "Think of it like"
 
@@ -306,6 +326,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 11. Insecure Communication (iOS)
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/319.html" target="_blank" rel="noopener noreferrer">CWE-319</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/295.html" target="_blank" rel="noopener noreferrer">CWE-295</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1557/" target="_blank" rel="noopener noreferrer" title="Adversary-in-the-Middle">ATT&amp;CK T1557</a> <span class="vtag owasp">OWASP Mobile M5:2024</span></p>
+
 !!! tip "Think of it like"
 
     Same postcard problem as Android Item 5.
@@ -331,6 +353,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 ---
 
 ## 12. Insecure Data Storage (iOS)
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/312.html" target="_blank" rel="noopener noreferrer">CWE-312</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/922.html" target="_blank" rel="noopener noreferrer">CWE-922</a> <span class="vtag owasp">OWASP Mobile M9:2024</span></p>
 
 !!! tip "Think of it like"
 
@@ -358,6 +382,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 13. Insecure Local SQLite Database
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/312.html" target="_blank" rel="noopener noreferrer">CWE-312</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/922.html" target="_blank" rel="noopener noreferrer">CWE-922</a> <span class="vtag owasp">OWASP Mobile M9:2024</span></p>
+
 !!! tip "Think of it like"
 
     A **diary kept in an unlocked cupboard**: the whole book is readable by anyone who opens the cupboard.
@@ -384,6 +410,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 14. Insecure URL Cache
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/525.html" target="_blank" rel="noopener noreferrer">CWE-525</a> <span class="vtag owasp">OWASP Mobile M9:2024</span></p>
+
 !!! tip "Think of it like"
 
     A waiter who **keeps used bills (with your card details) in a drawer** "in case you order again."
@@ -408,6 +436,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 ---
 
 ## 15. Insecure URL Scheme
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/939.html" target="_blank" rel="noopener noreferrer">CWE-939</a> <span class="vtag owasp">OWASP Mobile M4:2024</span></p>
 
 !!! tip "Think of it like"
 
@@ -437,6 +467,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 16. Keychain Persistence
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/459.html" target="_blank" rel="noopener noreferrer">CWE-459</a> <span class="vtag owasp">OWASP Mobile M9:2024</span></p>
+
 !!! tip "Think of it like"
 
     You leave a rented flat but **your locker stays in the building with your stuff inside**, and the next tenant gets the locker key too.
@@ -462,6 +494,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 ---
 
 ## 17. Local Authentication
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/287.html" target="_blank" rel="noopener noreferrer">CWE-287</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/603.html" target="_blank" rel="noopener noreferrer">CWE-603</a> <span class="vtag owasp">OWASP Mobile M3:2024</span></p>
 
 !!! tip "Think of it like"
 
@@ -490,6 +524,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 18. Sensitive Data in Log Files
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/532.html" target="_blank" rel="noopener noreferrer">CWE-532</a> <span class="vtag owasp">OWASP Mobile M9:2024</span></p>
+
 !!! tip "Think of it like"
 
     A cook who **writes every customer's card number on the kitchen notepad** "for debugging." Anyone who walks past reads it.
@@ -517,6 +553,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 19. SSL/TLS Pinning
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/295.html" target="_blank" rel="noopener noreferrer">CWE-295</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1557/" target="_blank" rel="noopener noreferrer" title="Adversary-in-the-Middle">ATT&amp;CK T1557</a> <span class="vtag owasp">OWASP Mobile M5:2024</span></p>
+
 !!! tip "Think of it like"
 
     Instead of trusting **any ID card that looks official**, you keep a photo of the *one real manager* and only trust that exact person.
@@ -542,6 +580,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 ---
 
 ## 20. Unprotected Application Access
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/306.html" target="_blank" rel="noopener noreferrer">CWE-306</a> <span class="vtag owasp">OWASP Mobile M3:2024</span></p>
 
 !!! tip "Think of it like"
 

@@ -27,6 +27,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 1. Injections
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/78.html" target="_blank" rel="noopener noreferrer">CWE-78</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/89.html" target="_blank" rel="noopener noreferrer">CWE-89</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1059/" target="_blank" rel="noopener noreferrer" title="Command and Scripting Interpreter">ATT&amp;CK T1059</a></p>
+
 !!! tip "Think of it like"
 
     A waiter passes your written order to the kitchen. You write "Tea" and then, on the same slip, "**and open the cash drawer**." He can't tell which part is food and which part is an instruction, so he does both.
@@ -61,6 +63,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 2. Broken Authentication and Session Management
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/287.html" target="_blank" rel="noopener noreferrer">CWE-287</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/613.html" target="_blank" rel="noopener noreferrer">CWE-613</a></p>
+
 !!! tip "Think of it like"
 
     A shop with a **"Staff Only" door whose lock is just a sticker**. A thief peels off the sticker. Or a staff member leaves the shop with the cash register still unlocked, and the next customer uses it.
@@ -94,6 +98,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 3. Sensitive Data Exposure
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/311.html" target="_blank" rel="noopener noreferrer">CWE-311</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/312.html" target="_blank" rel="noopener noreferrer">CWE-312</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1552/001/" target="_blank" rel="noopener noreferrer" title="Credentials In Files">ATT&amp;CK T1552.001</a></p>
+
 !!! tip "Think of it like"
 
     Keeping customer files in an **unlocked cupboard**. If someone steals the cupboard (or just walks in), everything is readable.
@@ -122,6 +128,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 4. Improper Cryptography Usage
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/327.html" target="_blank" rel="noopener noreferrer">CWE-327</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/321.html" target="_blank" rel="noopener noreferrer">CWE-321</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/330.html" target="_blank" rel="noopener noreferrer">CWE-330</a></p>
+
 !!! tip "Think of it like"
 
     Locking a safe with a **home-made lock** and **taping the key to the safe**. It looks secured but isn't.
@@ -149,6 +157,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 ---
 
 ## 5. Improper Authorization
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/285.html" target="_blank" rel="noopener noreferrer">CWE-285</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/732.html" target="_blank" rel="noopener noreferrer">CWE-732</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1068/" target="_blank" rel="noopener noreferrer" title="Exploitation for Privilege Escalation">ATT&amp;CK T1068</a></p>
 
 !!! tip "Think of it like"
 
@@ -184,6 +194,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 6. Security Misconfiguration
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/16.html" target="_blank" rel="noopener noreferrer">CWE-16</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/427.html" target="_blank" rel="noopener noreferrer">CWE-427</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/1188.html" target="_blank" rel="noopener noreferrer">CWE-1188</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1574/001/" target="_blank" rel="noopener noreferrer" title="DLL Search Order Hijacking">ATT&amp;CK T1574.001</a></p>
+
 !!! tip "Think of it like"
 
     Moving into a new house and **leaving the builder's spare key under the doormat**, the default gate password unchanged, and the garden door unlocked "for now."
@@ -213,6 +225,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 7. Insecure Communication
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/319.html" target="_blank" rel="noopener noreferrer">CWE-319</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/295.html" target="_blank" rel="noopener noreferrer">CWE-295</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1040/" target="_blank" rel="noopener noreferrer" title="Network Sniffing">ATT&amp;CK T1040</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1557/" target="_blank" rel="noopener noreferrer" title="Adversary-in-the-Middle">ATT&amp;CK T1557</a></p>
+
 !!! tip "Think of it like"
 
     Shouting your private messages across a **crowded hall** instead of whispering in a **closed room**.
@@ -240,6 +254,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 ---
 
 ## 8. Poor Code Quality
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/120.html" target="_blank" rel="noopener noreferrer">CWE-120</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/787.html" target="_blank" rel="noopener noreferrer">CWE-787</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/416.html" target="_blank" rel="noopener noreferrer">CWE-416</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/134.html" target="_blank" rel="noopener noreferrer">CWE-134</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/190.html" target="_blank" rel="noopener noreferrer">CWE-190</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1203/" target="_blank" rel="noopener noreferrer" title="Exploitation for Client Execution">ATT&amp;CK T1203</a></p>
 
 !!! tip "Think of it like"
 
@@ -276,6 +292,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 ## 9. Using Components with Known Vulnerabilities
 
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/1395.html" target="_blank" rel="noopener noreferrer">CWE-1395</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1203/" target="_blank" rel="noopener noreferrer" title="Exploitation for Client Execution">ATT&amp;CK T1203</a></p>
+
 !!! tip "Think of it like"
 
     Building a house with a **door lock whose design flaw was announced in the newspaper**, and never replacing it.
@@ -303,6 +321,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 ---
 
 ## 10. Insufficient Logging and Monitoring
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/778.html" target="_blank" rel="noopener noreferrer">CWE-778</a></p>
 
 !!! tip "Think of it like"
 

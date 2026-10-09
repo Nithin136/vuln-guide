@@ -28,6 +28,8 @@ Part B shows **what each problem looks like in each framework** (unsafe code vs 
 ## PART A: THE 6 PROBLEMS
 
 ## 1. Cross-Site Request Forgery (CSRF)
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/352.html" target="_blank" rel="noopener noreferrer">CWE-352</a> <span class="vtag owasp">OWASP A01:2021</span></p>
 *(in your notes for Angular, React, Vue, JavaScript and TypeScript)*
 
 !!! tip "Think of it like"
@@ -59,6 +61,8 @@ Part B shows **what each problem looks like in each framework** (unsafe code vs 
 ---
 
 ## 2. Direct DOM Manipulation XSS
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/79.html" target="_blank" rel="noopener noreferrer">CWE-79</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1059/007/" target="_blank" rel="noopener noreferrer" title="JavaScript">ATT&amp;CK T1059.007</a> <span class="vtag owasp">OWASP A03:2021</span></p>
 *(in all five)*
 
 !!! tip "Think of it like"
@@ -88,6 +92,8 @@ Part B shows **what each problem looks like in each framework** (unsafe code vs 
 ---
 
 ## 3. Template Concatenation / Untrusted Template Usage XSS
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/1336.html" target="_blank" rel="noopener noreferrer">CWE-1336</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/79.html" target="_blank" rel="noopener noreferrer">CWE-79</a> <span class="vtag owasp">OWASP A03:2021</span></p>
 *(Angular: "template concatenation", Vue/JS/TS: "untrusted template usage")*
 
 !!! tip "Think of it like"
@@ -117,6 +123,8 @@ Part B shows **what each problem looks like in each framework** (unsafe code vs 
 ---
 
 ## 4. Sanitization Misuse XSS
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/79.html" target="_blank" rel="noopener noreferrer">CWE-79</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/116.html" target="_blank" rel="noopener noreferrer">CWE-116</a> <span class="vtag owasp">OWASP A03:2021</span></p>
 *(Angular)*
 
 !!! tip "Think of it like"
@@ -144,6 +152,8 @@ Part B shows **what each problem looks like in each framework** (unsafe code vs 
 ---
 
 ## 5. Untrusted HTML Rendering XSS
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/79.html" target="_blank" rel="noopener noreferrer">CWE-79</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1059/007/" target="_blank" rel="noopener noreferrer" title="JavaScript">ATT&amp;CK T1059.007</a> <span class="vtag owasp">OWASP A03:2021</span></p>
 *(React, Vue, JavaScript, TypeScript)*
 
 !!! tip "Think of it like"
@@ -172,6 +182,8 @@ Part B shows **what each problem looks like in each framework** (unsafe code vs 
 ---
 
 ## 6. Components with Known Vulnerabilities
+
+<p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/1395.html" target="_blank" rel="noopener noreferrer">CWE-1395</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1195/001/" target="_blank" rel="noopener noreferrer" title="Compromise Software Dependencies and Development Tools">ATT&amp;CK T1195.001</a> <span class="vtag owasp">OWASP A06:2021</span></p>
 *(React, but it applies to all)*
 
 !!! tip "Think of it like"

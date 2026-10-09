@@ -32,6 +32,12 @@ theme:
     - search.highlight
     - content.code.copy
 
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/quiz.js
+
 plugins:
   - search
 
@@ -59,3 +65,5 @@ nav:
   - "8. Front-end": part-8-frontend.md
   - "9. Kubernetes": part-9-kubernetes.md
   - Revision sheet: revision-sheet.md
+  - Quiz: quiz.md
+  - Tag index: tag-index.md
