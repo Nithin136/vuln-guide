@@ -65,6 +65,10 @@ A scenario-based security reference. Every vulnerability is explained in plain l
 
 </div>
 
+## Try the labs
+
+Four in-browser simulators let you attack and fix a fake app: [SQL injection](labs/sqli.md), [XSS](labs/xss.md), [IDOR](labs/idor.md) and [command injection](labs/command-injection.md). Each one has a "what a SOC analyst would see" panel. Everything is simulated in your browser. You can also test yourself with the [quiz](quiz.md).
+
 ## Use it for interview revision
 
 1. Read the glossary at the top of each topic first.

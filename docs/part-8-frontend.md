@@ -63,6 +63,8 @@ Part B shows **what each problem looks like in each framework** (unsafe code vs 
 ## 2. Direct DOM Manipulation XSS
 
 <p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/79.html" target="_blank" rel="noopener noreferrer">CWE-79</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1059/007/" target="_blank" rel="noopener noreferrer" title="JavaScript">ATT&amp;CK T1059.007</a> <span class="vtag owasp">OWASP A03:2021</span></p>
+
+<p class="lab-link">Try it in the browser: <a href="../labs/xss/">XSS lab</a></p>
 *(in all five)*
 
 !!! tip "Think of it like"
@@ -154,6 +156,8 @@ Part B shows **what each problem looks like in each framework** (unsafe code vs 
 ## 5. Untrusted HTML Rendering XSS
 
 <p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/79.html" target="_blank" rel="noopener noreferrer">CWE-79</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1059/007/" target="_blank" rel="noopener noreferrer" title="JavaScript">ATT&amp;CK T1059.007</a> <span class="vtag owasp">OWASP A03:2021</span></p>
+
+<p class="lab-link">Try it in the browser: <a href="../labs/xss/">XSS lab</a></p>
 *(React, Vue, JavaScript, TypeScript)*
 
 !!! tip "Think of it like"

@@ -37,6 +37,7 @@ extra_css:
 
 extra_javascript:
   - javascripts/quiz.js
+  - javascripts/labs.js
 
 plugins:
   - search
@@ -65,5 +66,11 @@ nav:
   - "8. Front-end": part-8-frontend.md
   - "9. Kubernetes": part-9-kubernetes.md
   - Revision sheet: revision-sheet.md
+  - Labs:
+      - Overview: labs/index.md
+      - SQL injection: labs/sqli.md
+      - XSS: labs/xss.md
+      - IDOR: labs/idor.md
+      - Command injection: labs/command-injection.md
   - Quiz: quiz.md
   - Tag index: tag-index.md

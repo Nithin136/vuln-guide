@@ -49,6 +49,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 <p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/639.html" target="_blank" rel="noopener noreferrer">CWE-639</a> <span class="vtag owasp">OWASP API1:2019</span></p>
 
+<p class="lab-link">Try it in the browser: <a href="../labs/idor/">IDOR lab</a></p>
+
 !!! tip "Think of it like"
 
     A hotel gives you key card #101. At the lift, you press floor 2 and enter room **102** with your key, because the doors only check "is this a valid hotel card?" and not "is this *your* room?"
@@ -103,6 +105,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 ## 4. Command Injection
 
 <p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/78.html" target="_blank" rel="noopener noreferrer">CWE-78</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1190/" target="_blank" rel="noopener noreferrer" title="Exploit Public-Facing Application">ATT&amp;CK T1190</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1059/" target="_blank" rel="noopener noreferrer" title="Command and Scripting Interpreter">ATT&amp;CK T1059</a> <span class="vtag owasp">OWASP API8:2019</span></p>
+
+<p class="lab-link">Try it in the browser: <a href="../labs/command-injection/">Command injection lab</a></p>
 
 !!! tip "Think of it like"
 
@@ -315,6 +319,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 ## 12. SQL Injection
 
 <p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/89.html" target="_blank" rel="noopener noreferrer">CWE-89</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1190/" target="_blank" rel="noopener noreferrer" title="Exploit Public-Facing Application">ATT&amp;CK T1190</a> <span class="vtag owasp">OWASP API8:2019</span></p>
+
+<p class="lab-link">Try it in the browser: <a href="../labs/sqli/">SQL injection lab</a></p>
 
 !!! tip "Think of it like"
 

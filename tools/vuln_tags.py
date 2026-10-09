@@ -1,4 +1,4 @@
-"""Add CWE / MITRE ATT&CK / OWASP badges under every numbered vulnerability heading
+"""Add CWE / MITRE ATT&CK / OWASP badges (and "Try it" lab links) under every numbered vulnerability heading
 and regenerate docs/tag-index.md. Safe to re-run (idempotent).
 
 Run from the repo root:  python tools/vuln_tags.py
@@ -106,6 +106,16 @@ D = {
   9: ([1395], ["T1195"], "OWASP K8s K02"), 10: ([1395], ["T1068"], "OWASP K8s K10"),
  },
 }
+# (page, item number) -> list of (lab slug, label). Adds a "Try it" link under the badges.
+LABS = {
+ ("part-1-web", 18): [("sqli", "SQL injection lab")], ("part-2-api", 12): [("sqli", "SQL injection lab")],
+ ("part-1-web", 14): [("xss", "XSS lab")], ("part-1-web", 19): [("xss", "XSS lab")], ("part-1-web", 6): [("xss", "XSS lab")],
+ ("part-8-frontend", 2): [("xss", "XSS lab")], ("part-8-frontend", 5): [("xss", "XSS lab")],
+ ("part-1-web", 9): [("idor", "IDOR lab")], ("part-2-api", 2): [("idor", "IDOR lab")],
+ ("part-1-web", 2): [("command-injection", "Command injection lab")], ("part-2-api", 4): [("command-injection", "Command injection lab")],
+ ("part-6-aws", 3): [("command-injection", "Command injection lab")],
+ ("part-7-desktop", 1): [("sqli", "SQL injection lab"), ("command-injection", "Command injection lab")],
+}
 PAGE_TITLES = {
  "part-1-web": "1. Web", "part-2-api": "2. API", "part-3-llm": "3. LLM",
  "part-4-android-ios": "4. Android and iOS", "part-5-docker": "5. Docker", "part-6-aws": "6. AWS",
@@ -135,7 +145,7 @@ for page, items in D.items():
     for ln in path.read_text().splitlines():
         if ln.strip().startswith("```"):
             in_fence = not in_fence
-        if not in_fence and ln.startswith('<p class="vuln-tags"'):
+        if not in_fence and ln.startswith(('<p class="vuln-tags"', '<p class="lab-link"')):
             if out and out[-1] == "":
                 out.pop()
             continue
@@ -149,6 +159,9 @@ for page, items in D.items():
             if line:
                 tagged += 1
                 out += ["", line]
+            if (page, num) in LABS:
+                links = " &nbsp;|&nbsp; ".join(f'<a href="../labs/{slug}/">{label}</a>' for slug, label in LABS[(page, num)])
+                out += ["", f'<p class="lab-link">Try it in the browser: {links}</p>']
             anchor = slugify(f"{num}. {title}", "-")
             rows.append((page, num, title, anchor, cwe, atk, owasp))
     path.write_text("\n".join(out) + "\n")

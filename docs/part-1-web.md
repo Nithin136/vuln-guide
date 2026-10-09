@@ -50,6 +50,8 @@ Every item has: **Think of it like** (real-life picture) → **Scenario** (step 
 
 <p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/78.html" target="_blank" rel="noopener noreferrer">CWE-78</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1190/" target="_blank" rel="noopener noreferrer" title="Exploit Public-Facing Application">ATT&amp;CK T1190</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1059/" target="_blank" rel="noopener noreferrer" title="Command and Scripting Interpreter">ATT&amp;CK T1059</a> <span class="vtag owasp">OWASP A03:2021</span></p>
 
+<p class="lab-link">Try it in the browser: <a href="../labs/command-injection/">Command injection lab</a></p>
+
 !!! tip "Think of it like"
 
     You tell a waiter, "Bring me tea." A prankster edits the order slip to "Bring me tea *and open the cash drawer*." The waiter follows the whole slip.
@@ -153,6 +155,8 @@ Every item has: **Think of it like** (real-life picture) → **Scenario** (step 
 
 <p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/79.html" target="_blank" rel="noopener noreferrer">CWE-79</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1059/007/" target="_blank" rel="noopener noreferrer" title="JavaScript">ATT&amp;CK T1059.007</a> <span class="vtag owasp">OWASP A03:2021</span></p>
 
+<p class="lab-link">Try it in the browser: <a href="../labs/xss/">XSS lab</a></p>
+
 !!! tip "Think of it like"
 
     A notice board where whatever people write gets **executed** as instructions by everyone reading it, instead of just being read.
@@ -227,6 +231,8 @@ Every item has: **Think of it like** (real-life picture) → **Scenario** (step 
 ## 9. Horizontal Privilege Escalation
 
 <p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/639.html" target="_blank" rel="noopener noreferrer">CWE-639</a> <span class="vtag owasp">OWASP A01:2021</span></p>
+
+<p class="lab-link">Try it in the browser: <a href="../labs/idor/">IDOR lab</a></p>
 
 !!! tip "Think of it like"
 
@@ -353,6 +359,8 @@ Every item has: **Think of it like** (real-life picture) → **Scenario** (step 
 
 <p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/79.html" target="_blank" rel="noopener noreferrer">CWE-79</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1059/007/" target="_blank" rel="noopener noreferrer" title="JavaScript">ATT&amp;CK T1059.007</a> <span class="vtag owasp">OWASP A03:2021</span></p>
 
+<p class="lab-link">Try it in the browser: <a href="../labs/xss/">XSS lab</a></p>
+
 !!! tip "Think of it like"
 
     You call a shop and say, "Please repeat after me: [bad words]." The shop repeats it out loud to everyone in the store. The text came from the *request*, and was *reflected* back.
@@ -455,6 +463,8 @@ Every item has: **Think of it like** (real-life picture) → **Scenario** (step 
 
 <p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/89.html" target="_blank" rel="noopener noreferrer">CWE-89</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1190/" target="_blank" rel="noopener noreferrer" title="Exploit Public-Facing Application">ATT&amp;CK T1190</a> <span class="vtag owasp">OWASP A03:2021</span></p>
 
+<p class="lab-link">Try it in the browser: <a href="../labs/sqli/">SQL injection lab</a></p>
+
 !!! tip "Think of it like"
 
     A bank clerk follows a note you hand over: "Give money to **Ravi**." You change it to "Give money to Ravi **and open the vault**." The clerk can't tell what's data and what's a command.
@@ -480,6 +490,8 @@ Every item has: **Think of it like** (real-life picture) → **Scenario** (step 
 ## 19. Stored XSS
 
 <p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/79.html" target="_blank" rel="noopener noreferrer">CWE-79</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1059/007/" target="_blank" rel="noopener noreferrer" title="JavaScript">ATT&amp;CK T1059.007</a> <span class="vtag owasp">OWASP A03:2021</span></p>
+
+<p class="lab-link">Try it in the browser: <a href="../labs/xss/">XSS lab</a></p>
 
 !!! tip "Think of it like"
 

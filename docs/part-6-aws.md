@@ -93,6 +93,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 <p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/78.html" target="_blank" rel="noopener noreferrer">CWE-78</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1059/" target="_blank" rel="noopener noreferrer" title="Command and Scripting Interpreter">ATT&amp;CK T1059</a></p>
 
+<p class="lab-link">Try it in the browser: <a href="../labs/command-injection/">Command injection lab</a></p>
+
 !!! tip "Think of it like"
 
     A helper takes your note and **follows every instruction in it**, including "also open the safe," because he doesn't see where your request ends and the extra order begins.

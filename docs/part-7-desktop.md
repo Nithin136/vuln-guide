@@ -29,6 +29,8 @@ Every item has: **Think of it like** → **Scenario** (step by step) → **Why i
 
 <p class="vuln-tags"><a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/78.html" target="_blank" rel="noopener noreferrer">CWE-78</a> <a class="vtag cwe" href="https://cwe.mitre.org/data/definitions/89.html" target="_blank" rel="noopener noreferrer">CWE-89</a> <a class="vtag atk" href="https://attack.mitre.org/techniques/T1059/" target="_blank" rel="noopener noreferrer" title="Command and Scripting Interpreter">ATT&amp;CK T1059</a></p>
 
+<p class="lab-link">Try it in the browser: <a href="../labs/sqli/">SQL injection lab</a> &nbsp;|&nbsp; <a href="../labs/command-injection/">Command injection lab</a></p>
+
 !!! tip "Think of it like"
 
     A waiter passes your written order to the kitchen. You write "Tea" and then, on the same slip, "**and open the cash drawer**." He can't tell which part is food and which part is an instruction, so he does both.
