@@ -1,0 +1,36 @@
+# VulnLab: intentionally vulnerable web app + a patched build, for LOCAL practice only.
+# Ports are bound to 127.0.0.1. Run this on your lab VM / lab machine, never on a shared or production host.
+name: vulnlab
+
+x-hardening: &hardening
+  read_only: true                # container filesystem is read-only
+  tmpfs: [/tmp]                  # the SQLite DB lives here and resets on every restart
+  cap_drop: [ALL]                # no Linux capabilities
+  security_opt: ["no-new-privileges:true"]
+  pids_limit: 128
+  mem_limit: 256m
+  cpus: 0.5
+  volumes: ["logs:/logs"]        # JSON logs for Wazuh / Splunk
+  restart: "no"
+
+services:
+  vulnerable:
+    <<: *hardening
+    build: ./app
+    image: vulnlab-vulnerable:local
+    container_name: vulnlab-vulnerable
+    environment: { VARIANT: vulnerable }
+    ports: ["127.0.0.1:8081:8080"]
+    labels: { "lab.warning": "intentionally vulnerable, local use only" }
+
+  patched:
+    <<: *hardening
+    build: ./app
+    image: vulnlab-patched:local
+    container_name: vulnlab-patched
+    environment: { VARIANT: patched }
+    ports: ["127.0.0.1:8082:8080"]
+
+volumes:
+  logs:
+    name: vulnlab-logs

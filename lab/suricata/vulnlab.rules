@@ -1,0 +1,26 @@
+# VulnLab network detection rules for Suricata (SIDs 4100001-4100099, local use).
+# They watch HTTP to the lab ports 8081 (vulnerable) and 8082 (patched).
+# Install:   sudo cp vulnlab.rules /var/lib/suricata/rules/vulnlab.rules
+#            add "vulnlab.rules" under rule-files: in /etc/suricata/suricata.yaml
+#            sudo suricata -T -c /etc/suricata/suricata.yaml      (test the config)
+# Note: published ports on 127.0.0.1 travel over the loopback interface (lo). Sniff "lo" for them,
+#       or run the apps on a host-only/bridged lab network and sniff that interface.
+
+# ---- Requests (the attempt: visible for BOTH builds) ----
+alert http any any -> any [8081,8082] (msg:"VULNLAB SQLi tautology or quote-comment in request body"; flow:established,to_server; http.method; content:"POST"; http.request_body; pcre:"/(?:%27|')(?:\+|%20|\s)*(?:(?:or|and)(?:\+|%20|\s)+(?:%27|')?\w+(?:%27|')?(?:\+|%20|\s)*(?:=|%3d)|--|%2d%2d|union|select)/i"; classtype:web-application-attack; sid:4100001; rev:1; metadata:mitre_technique_id T1190;)
+
+alert http any any -> any [8081,8082] (msg:"VULNLAB SQLi pattern in URI"; flow:established,to_server; http.uri; pcre:"/(?:%27|')(?:\+|%20|\s)*(?:(?:or|and)(?:\+|%20|\s)+(?:%27|')?\w+(?:%27|')?(?:\+|%20|\s)*(?:=|%3d)|--|%2d%2d|union|select)/i"; classtype:web-application-attack; sid:4100002; rev:1; metadata:mitre_technique_id T1190;)
+
+alert http any any -> any [8081,8082] (msg:"VULNLAB XSS pattern in URI"; flow:established,to_server; http.uri; pcre:"/(?:<|%3c)(?:\s|%20|\+)*(?:script|img|svg|iframe)|\bon[a-z]{3,20}(?:\s|%20|\+)*(?:=|%3d)|javascript(?::|%3a)/i"; classtype:web-application-attack; sid:4100010; rev:1;)
+
+alert http any any -> any [8081,8082] (msg:"VULNLAB command injection metacharacter in host parameter"; flow:established,to_server; http.uri; content:"/tools/lookup"; startswith; pcre:"/[?&]host=[^&]*(?:\x3b|%3b|&&|%26%26|\||%7c|`|%60|\$\(|%24%28)/i"; classtype:web-application-attack; sid:4100020; rev:1; metadata:mitre_technique_id T1059;)
+
+# ---- Behaviour over time (thresholds) ----
+alert http any any -> any [8081,8082] (msg:"VULNLAB many /api/orders/<id> requests from one source (possible IDOR enumeration)"; flow:established,to_server; http.method; content:"GET"; http.uri; content:"/api/orders/"; startswith; threshold:type both, track by_src, count 8, seconds 60; classtype:attempted-recon; sid:4100030; rev:1;)
+
+alert http any any -> any [8081,8082] (msg:"VULNLAB many POST /login requests from one source (possible brute force)"; flow:established,to_server; http.method; content:"POST"; http.uri; content:"/login"; startswith; threshold:type both, track by_src, count 6, seconds 60; classtype:attempted-admin; sid:4100040; rev:1; metadata:mitre_technique_id T1110;)
+
+# ---- Responses (evidence the attack WORKED: only the vulnerable build triggers these) ----
+alert http any [8081,8082] -> any any (msg:"VULNLAB command output (uid= ... gid=) in HTTP response"; flow:established,to_client; http.response_body; content:"uid="; content:"gid="; distance:0; within:40; classtype:successful-recon-limited; sid:4100050; rev:1; metadata:mitre_technique_id T1059;)
+
+alert http any [8081,8082] -> any any (msg:"VULNLAB raw <script> tag reflected in HTTP response (reflected XSS)"; flow:established,to_client; http.response_body; content:"<script>"; nocase; classtype:web-application-attack; sid:4100060; rev:1;)

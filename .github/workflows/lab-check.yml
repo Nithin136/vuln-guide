@@ -1,0 +1,46 @@
+name: Lab check
+
+# Builds the Docker lab, attacks both builds, and checks the Wazuh rules against the real logs.
+on:
+  pull_request:
+    paths: ["lab/**", ".github/workflows/lab-check.yml"]
+  push:
+    branches: [main]
+    paths: ["lab/**", ".github/workflows/lab-check.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  lab:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build and start the lab (vulnerable + patched)
+        run: docker compose -f lab/docker-compose.yml up -d --build
+
+      - name: Wait for both builds
+        run: |
+          for port in 8081 8082; do
+            for i in $(seq 1 30); do curl -fs "http://127.0.0.1:${port}/healthz" && break; sleep 1; done
+            curl -fs "http://127.0.0.1:${port}/healthz"
+          done
+
+      - name: Attack both builds (vulnerable must be exploitable, patched must block)
+        run: python3 lab/scripts/run_attacks.py --noisy --check
+
+      - name: Check the Wazuh rules against the real logs
+        run: |
+          docker run --rm -v vulnlab-logs:/logs alpine cat /logs/app-vulnerable.json > /tmp/vulnerable.json
+          docker run --rm -v vulnlab-logs:/logs alpine cat /logs/app-patched.json > /tmp/patched.json
+          python3 lab/scripts/test_wazuh_rules.py --selftest /tmp/vulnerable.json /tmp/patched.json
+
+      - name: Show container logs if something failed
+        if: failure()
+        run: docker compose -f lab/docker-compose.yml logs --tail=80
+
+      - name: Stop the lab
+        if: always()
+        run: docker compose -f lab/docker-compose.yml down -v

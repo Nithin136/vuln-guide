@@ -8,3 +8,11 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+  - package-ecosystem: "pip"
+    directory: "/lab/app"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "docker"
+    directory: "/lab/app"
+    schedule:
+      interval: "weekly"

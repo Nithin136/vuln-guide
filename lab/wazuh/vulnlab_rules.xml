@@ -1,0 +1,115 @@
+<!--
+  VulnLab detection rules for Wazuh (custom rule IDs 100100-100199).
+  Install on the Wazuh manager:
+    sudo cp vulnlab_rules.xml /var/ossec/etc/rules/vulnlab_rules.xml
+    sudo chown wazuh:wazuh /var/ossec/etc/rules/vulnlab_rules.xml && sudo chmod 660 /var/ossec/etc/rules/vulnlab_rules.xml
+    sudo systemctl restart wazuh-manager
+  Test a log line first:  sudo /var/ossec/bin/wazuh-logtest   (paste a line from ../samples/)
+  The app writes one JSON object per request, decoded by Wazuh's built-in "json" decoder.
+-->
+<group name="local,vulnlab,web,">
+
+  <!-- Base rule: any event from the VulnLab app (level 0 = grouped only, no alert) -->
+  <rule id="100100" level="0">
+    <decoded_as>json</decoded_as>
+    <field name="app">^vulnlab$</field>
+    <description>VulnLab: application event</description>
+  </rule>
+
+  <!-- ===== SQL injection ===== -->
+  <rule id="100110" level="8">
+    <if_sid>100100</if_sid>
+    <field name="params" type="pcre2">(?i)(\bor\b\s*['"]?\w+['"]?\s*=\s*['"]?\w+|--|'\s*(or|and|union|select|drop|insert|update|delete)\b)</field>
+    <description>VulnLab: possible SQL injection pattern in request parameters</description>
+    <mitre><id>T1190</id></mitre>
+    <group>sql_injection,attack,</group>
+  </rule>
+
+  <rule id="100111" level="13">
+    <if_sid>100110</if_sid>
+    <field name="event">^login_success$</field>
+    <description>VulnLab: SQL injection login bypass SUCCEEDED (login success with an injection pattern)</description>
+    <mitre><id>T1190</id></mitre>
+    <group>sql_injection,attack,authentication_success,</group>
+  </rule>
+
+  <rule id="100112" level="9">
+    <if_sid>100100</if_sid>
+    <field name="event">^login_error$</field>
+    <description>VulnLab: database error returned from /login (input reached the SQL parser)</description>
+    <group>sql_injection,</group>
+  </rule>
+
+  <!-- ===== Cross-site scripting ===== -->
+  <rule id="100120" level="8">
+    <if_sid>100100</if_sid>
+    <field name="params" type="pcre2">(?i)(&lt;\s*script|\bon[a-z]+\s*=|javascript\s*:|&lt;\s*(img|svg|iframe)\b)</field>
+    <description>VulnLab: possible XSS pattern in request parameters</description>
+    <group>web_attack,attack,xss,</group>
+  </rule>
+
+  <rule id="100121" level="10">
+    <if_sid>100120</if_sid>
+    <field name="http_status">^200$</field>
+    <description>VulnLab: XSS pattern returned HTTP 200 (check whether the response was encoded; web logs cannot prove reflection)</description>
+    <group>web_attack,attack,xss,</group>
+  </rule>
+
+  <!-- ===== Command injection ===== -->
+  <rule id="100130" level="10">
+    <if_sid>100100</if_sid>
+    <field name="event">^lookup$</field>
+    <field name="params" type="pcre2">[;&amp;|`$()&lt;&gt;]</field>
+    <description>VulnLab: shell metacharacter in the host parameter (possible command injection)</description>
+    <mitre><id>T1059</id></mitre>
+    <group>command_injection,attack,</group>
+  </rule>
+
+  <rule id="100131" level="13">
+    <if_sid>100130</if_sid>
+    <field name="http_status">^200$</field>
+    <description>VulnLab: command injection pattern returned HTTP 200 (likely SUCCEEDED)</description>
+    <mitre><id>T1059</id></mitre>
+    <group>command_injection,attack,</group>
+  </rule>
+
+  <!-- ===== IDOR / broken object level authorization ===== -->
+  <rule id="100140" level="7">
+    <if_sid>100100</if_sid>
+    <field name="event">^order_view$</field>
+    <field name="cross_user_access">^true$</field>
+    <description>VulnLab: user requested an order that belongs to another user</description>
+    <group>idor,access_control,</group>
+  </rule>
+
+  <rule id="100141" level="10">
+    <if_sid>100140</if_sid>
+    <field name="http_status">^200$</field>
+    <description>VulnLab: another user's order was RETURNED (IDOR succeeded)</description>
+    <group>idor,access_control,attack,</group>
+  </rule>
+
+  <rule id="100142" level="12" frequency="5" timeframe="60">
+    <if_matched_sid>100140</if_matched_sid>
+    <same_field>user</same_field>
+    <description>VulnLab: one user hit 5+ other users' orders within 60 seconds (ID enumeration)</description>
+    <group>idor,access_control,attack,</group>
+  </rule>
+
+  <!-- ===== Brute force ===== -->
+  <rule id="100150" level="3">
+    <if_sid>100100</if_sid>
+    <field name="event">^login_failed$</field>
+    <description>VulnLab: failed login</description>
+    <group>authentication_failed,</group>
+  </rule>
+
+  <rule id="100151" level="10" frequency="6" timeframe="60">
+    <if_matched_sid>100150</if_matched_sid>
+    <same_source_ip />
+    <description>VulnLab: 6+ failed logins from the same source within 60 seconds (brute force)</description>
+    <mitre><id>T1110</id></mitre>
+    <group>authentication_failures,attack,</group>
+  </rule>
+
+</group>

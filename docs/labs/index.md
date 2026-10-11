@@ -34,3 +34,7 @@ Hands-on, in-browser simulators. Each lab follows the same four steps used acros
 | **Try it** | Editable input and ready-made payloads |
 | **Detect** | A "What a SOC analyst would see" panel: simulated log lines, patterns that matched, and an example detection idea |
 | **Fix** | A switch between the vulnerable and the fixed version of the same app |
+
+## Want the real thing?
+
+The [local lab](../local-lab.md) runs a real vulnerable app and a patched build in Docker on your own machine, with Wazuh and Suricata rules that detect each attack.

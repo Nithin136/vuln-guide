@@ -1,0 +1,7 @@
+<!-- Add inside <ossec_config> in /var/ossec/etc/ossec.conf on the machine that runs the lab containers
+     (the Wazuh agent), then restart the agent: sudo systemctl restart wazuh-agent.
+     The Docker volume "vulnlab-logs" holds the JSON logs; this is its location on a default Linux Docker install. -->
+<localfile>
+  <log_format>json</log_format>
+  <location>/var/lib/docker/volumes/vulnlab-logs/_data/*.json</location>
+</localfile>

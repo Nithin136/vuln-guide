@@ -72,5 +72,6 @@ nav:
       - XSS: labs/xss.md
       - IDOR: labs/idor.md
       - Command injection: labs/command-injection.md
+  - Local lab: local-lab.md
   - Quiz: quiz.md
   - Tag index: tag-index.md
